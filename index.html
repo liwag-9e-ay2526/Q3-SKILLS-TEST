@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+
+    <div class="container">
+        <h1>Cine Sophia</h1>
+
+    <br>
+
+    <h2>Student Detail</h2>
+
+    <b>Full name:</b>
+        <input type="text" name="name" class="form-control mb-3" placeholder="Juan Dela Cruz">
+
+    <br>
+
+    <h3>Ticket Selection</h3>
+
+    <label>Quantity (₱250.00 each)</label><br>
+    <br>
+    <label>Ticket Amount</label><br>
+    <input type="number" id="qty" class="form-control mb-3" value="0" min="0">
+
+    <br>
+
+    <h4>Payment Details</h4>
+        <label for="subtotal">Sub Total:</label>
+        <input type="number" name="subtotal" class="form-control" readonly value="0.00">
+        <label for="admin fee">Admin Fee</label>
+        <input type="number" name="admin fee" class="form-control" readonly value="50.00">
+        <p class="total">Total: ₱<span id="total">0</span></p>
+    <br>
+
+    <button class="btn btn-primary" onclick="calculateTotal()">Complete Registration</button>
+    <button class="btn btn-secondary" onclick="resetForm()">Reset</button>
+
+    </div>
+
+
+
+<script src="main.js"> </script>
+
+</body>
+</html>
